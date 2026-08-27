@@ -35,6 +35,12 @@ Understand how virtual threads handle blocking operations (like I/O or sleeping)
 - **Compile**: `javac -d bin 01-virtual-threads/src/Step4Blocking.java`
 - **Run**: `java -cp bin Step4Blocking`
 
+### Step 5: Testing & Debugging
+**File**: `01-virtual-threads/src/Step5Testing.java`
+Learn how to use Java assertions for manual testing and understand the basics of debugging virtual threads.
+- **Compile**: `javac -d bin 01-virtual-threads/src/Step5Testing.java`
+- **Run (Test)**: `java -ea -cp bin Step5Testing`
+
 ---
 
 ## Instructions for the Student
