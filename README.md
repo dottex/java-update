@@ -9,8 +9,12 @@ This repository is a collection of hands-on examples and experiments for learnin
 ## Modules
 
 - **[01-Virtual Threads](./01-virtual-threads/README.md)**: Explore lightweight concurrency, scalability, and non-blocking behavior.
-- **[02-NIO (Planned)](#)**: asynchronous I/O and file system operations.
-- **[03-Functional Java (Planned)](#)**: Lambdas, Streams, and Functional Interfaces.
+- **[02-Pattern Matching](./02-pattern-matching/README.md)**: Modern data-oriented programming with Records and Pattern Matching.
+- **[03-NIO (Planned)](#)**: asynchronous I/O and file system operations.
+
+## CLI Productivity
+
+- **[Terminal Mastery](./TERMINAL_MASTERY.md)**: Tips and tricks for working faster in the terminal with Java.
 
 ## Project Structure
 
