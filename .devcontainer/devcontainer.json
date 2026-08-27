@@ -1,0 +1,14 @@
+{
+  "name": "Modern Java Lab",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  },
+  "postCreateCommand": "java --version"
+}
