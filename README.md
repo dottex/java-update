@@ -2,6 +2,10 @@
 
 This repository is a collection of hands-on examples and experiments for learning modern Java features (Java 21+).
 
+## Quick Start
+
+- **[Build & Setup Guide](./BUILD_GUIDE.md)**: Detailed instructions for setting up your environment (SDKMAN, Dev Containers) and building the project (Manual, Maven, Gradle).
+
 ## Modules
 
 - **[01-Virtual Threads](./01-virtual-threads/README.md)**: Explore lightweight concurrency, scalability, and non-blocking behavior.
