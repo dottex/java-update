@@ -60,6 +60,7 @@ For instructions on using **Maven** or **Gradle**, please refer to the **[Build 
     *   **Step 2: Scalability** - Spawning 100,000 threads to demonstrate lightweight concurrency.
     *   **Step 3: Executor Service** - Production-ready task management with `Executors.newVirtualThreadPerTaskExecutor()`.
     *   **Step 4: Blocking Code** - Understanding how virtual threads handle I/O and sleep without blocking OS threads.
+    *   **Step 5: Testing & Debugging** - Using assertions for manual testing and introducing `jdb` for manual debugging.
     *   **Visual Learning:** See `01-virtual-threads/DIAGRAMS.md` for Mermaid diagrams of each step.
 
 2.  **02-nio (Planned):** asynchronous I/O and file system operations.

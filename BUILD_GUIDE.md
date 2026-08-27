@@ -184,4 +184,56 @@ To create a new Gradle-based console application:
 | **Output Directory** | Where the `.class` files are saved. | `-d` | `<directory>` / `layout.buildDirectory` |
 | **Classpath** | Where Java looks for dependencies and classes. | `-cp` | Automated by the build tool. |
 | **Source Path** | The location of your `.java` files. | (Positional) | `<sourceDirectory>` / `srcDirs` |
-| **Main Class** | The entry point for execution. | (Positional) | `exec.mainClass` / `application.mainClass` |
+| Main Class | The entry point for execution. | (Positional) | `exec.mainClass` / `application.mainClass` |
+
+---
+
+## 5. Manual Debugging with JDB
+
+The Java Debugger (`jdb`) is a simple command-line debugger for Java classes. It is included in the JDK.
+
+### 1. Compile with Debug Symbols
+To use a debugger, you must compile your code with the `-g` flag to include line numbers and local variable names.
+
+```bash
+javac -g -d bin 01-virtual-threads/src/Step1Basic.java
+```
+
+### 2. Start JDB
+Point JDB to your classpath and the class you want to debug.
+
+```bash
+jdb -classpath bin Step1Basic
+```
+
+### 3. Basic JDB Commands
+-   `stop at Step1Basic:15`: Set a breakpoint at line 15.
+-   `run`: Start execution.
+-   `print vThread1`: Inspect the value of a variable.
+-   `next`: Execute the next line (step over).
+-   `step`: Step into a method.
+-   `cont`: Continue execution until the next breakpoint or program end.
+-   `threads`: List all active threads.
+-   `where`: Show the stack trace of the current thread.
+
+---
+
+## 6. Manual Testing (Assertions)
+
+Java provides a built-in `assert` keyword for sanity checks and simple unit testing.
+
+### 1. The Syntax
+```java
+assert condition : "Error message if false";
+```
+
+### 2. Enabling Assertions
+By default, the Java Virtual Machine (JVM) **ignores** assertions for performance reasons. You must explicitly enable them using the `-ea` (or `-enableassertions`) flag.
+
+**Example:**
+```bash
+java -ea -cp bin Step5Testing
+```
+
+If an assertion fails, the JVM will throw an `AssertionError` and stop execution, showing your custom error message.
+
